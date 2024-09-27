@@ -1,0 +1,340 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: transparent;
+    color: white;
+    padding: .5rem .1rem;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+    .navbar-left a, .navbar-right a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+        .navbar-left a:hover, .navbar-right a:hover {
+            color: #ddd;
+        }
+
+    .navbar-right .nav-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .navbar-right .nav-item i {
+            margin-right: 8px;
+        }
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+    .logo:hover {
+        color: #ddd;
+    }
+
+.carddd {
+    border-radius:15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+    .carddd:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.carddd-icon {
+    font-size: 50px;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.carddd-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carddd-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Full viewport height */
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    color: white; /* Or any color that contrasts well with your background image */
+    font-size: 30px;
+    margin: 0; /* Removes default margin of h1 */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: calc(33.333% - 20px); /* 3 cards per row with gap */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+    .card:hover {
+        background: linear-gradient(135deg, #e2e2e2, #ffffff);
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.icon {
+    font-size: 40px; /* Size of the icon */
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.apply-button {
+    background-color: darkgreen; /* Blue background color */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+    .apply-button:hover {
+        background-color: crimson;
+    }
+
+.containerr {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.quote {
+    background-color: darkgreen;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: larger;
+    margin: auto;
+}
+
+    .quote:hover {
+        transition: background-color 0.3s ease;
+    }
+
+    .quote p {
+        font-size: xx-large;
+        color: white;
+        margin-top: 15px;
+        line-height: 1.6;
+    }
+
+    .quote i {
+        font-size: 4em;
+        color: white;
+    }
+
+.cardss-containerr {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardd {
+    background: linear-gradient(135deg, #e2e2e2, #ffffff);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .cardd i {
+        font-size: 3em;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .cardd p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.6;
+    }
+
+footer {
+    background-color: #e9ede8;
+    color: #080808;
+    padding: 40px 20px;
+    padding-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+    .footer-section h4 {
+        border-bottom: 2px solid #26ae61;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+            .footer-section ul li a {
+                color: #080808;
+                text-decoration: none;
+            }
+
+                .footer-section ul li a:hover {
+                    color: #26ae61;
+                }
+
+.footer-social {
+    text-align: center;
+    margin: 20px 0;
+}
+
+    .footer-social a {
+        color: #080808;
+        font-size: 1.5em;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+        .footer-social a:hover {
+            color: #26ae61;
+        }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+    .footer-bottom p {
+        font-size: 0.9em;
+    }
+    
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card per row on very small screens */
+    }
+}
